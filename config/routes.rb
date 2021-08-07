@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  # 5 restful routes for employees
+  get "/employees" => "employees#index"
+  get "/employees/:id" => "employees#show"
 end
