@@ -10,4 +10,10 @@ Rails.application.routes.draw do
   # routes for department index and department show actions
   get "/departments" => "departments#index"
   get "/departments/:id" => "departments#show"
+
+  # route for creating a user
+  post "/users" => "users#create"
+
+  # route for creating a session
+  post "/sessions" => "sessions#create"
 end

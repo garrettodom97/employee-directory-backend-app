@@ -1,4 +1,7 @@
 class EmployeesController < ApplicationController
+  # restrict create, update, and destroy actions to a signed in user
+  before_action :authenticate_user, except: [:index, :show]
+
   # index for displaying all employees
   def index
     employees = Employee.all
