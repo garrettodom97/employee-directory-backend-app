@@ -16,4 +16,7 @@ Rails.application.routes.draw do
 
   # route for creating a session
   post "/sessions" => "sessions#create"
+
+  # route for Heroku
+  get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: "public/index.html")]] }
 end
