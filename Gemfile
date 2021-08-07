@@ -39,3 +39,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # http gem for making API calls
 gem 'http'
+
+# serializer gem for displaying json data in a custom format
+gem 'active_model_serializers', '~> 0.10.0'
+
