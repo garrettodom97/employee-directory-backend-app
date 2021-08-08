@@ -1,5 +1,7 @@
 # Create departments
 
+User.create!(email: "admin@example.com", password: "password")
+
 Department.create!(name: "Engineering", code: 1, job_title: "Engineer")
 Department.create!(name: "Sales", code: 2, job_title: "Salesperson")
 Department.create!(name: "Marketing", code: 3, job_title: "Marketer")
