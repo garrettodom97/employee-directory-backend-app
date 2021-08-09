@@ -19,7 +19,7 @@ Department.create!(name: "Human Resources", code: 5, job_title: "HR Representati
   gender = result["results"][0]["gender"]
   email = result["results"][0]["email"]
   phone = result["results"][0]["phone"]
-  picture = result["results"][0]["picture"]["thumbnail"]
+  picture = result["results"][0]["picture"]["large"]
 
   # generate a random department code
   department_code = rand(5) + 1
