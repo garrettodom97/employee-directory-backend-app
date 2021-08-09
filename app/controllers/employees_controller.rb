@@ -4,7 +4,7 @@ class EmployeesController < ApplicationController
 
   # index for displaying all employees
   def index
-    employees = Employee.all
+    employees = Employee.all.order("last_name")
     render json: employees
   end
 
